@@ -96,14 +96,14 @@
                 
                 <div class="relative">
                     <!-- 
-                      IMAGE FIX FOR PREVIEW: 
-                      Replaced "main-photo.jpg" with a placeholder.
-                      This will be replaced by your REAL photo on your live GitHub site.
+                      This is your real photo's filename.
+                      The 'onerror' part will show a pink box IF the file is not found.
                     -->
                     <img 
-                      src="https://placehold.co/1200x800/fecdd3/db2777?text=Your+Main+Photo" 
+                      src="main-photo.jpg" 
                       alt="A special moment" 
                       class="w-full h-auto object-cover"
+                      onerror="this.src='https://placehold.co/1200x800/fecdd3/db2777?text=Error:+main-photo.jpg+not+found'; this.onerror=null;"
                     >
                     <div class="absolute top-0 left-0 pookie-bow">
                         🎀
@@ -124,7 +124,7 @@
                 <!-- EDIT THIS: Write your story here -->
                 <p class="text-lg leading-relaxed mb-4">
                     I still remember the day we first met...
-                </s:p>
+                </p>
                 <p class="text-lg leading-relaxed">
                     Thank you for every laugh.
                 </p>
@@ -139,10 +139,12 @@
                 
                 <!-- Image 1 -->
                 <div id="gallery-item-1" data-song-id="song-1" class="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer fade-on-scroll delay-3">
-                    <!-- 
-                      IMAGE FIX FOR PREVIEW: Replaced "photo1.jpg"
-                    -->
-                    <img src="https://placehold.co/600x400/fecdd3/db2777?text=Your+Photo+1" alt="Gallery image 1" class="w-full h-auto object-cover">
+                    <img 
+                      src="photo1.jpg" 
+                      alt="Gallery image 1" 
+                      class="w-full h-auto object-cover"
+                      onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo1.jpg+not+found'; this.onerror=null;"
+                    >
                     <div class="p-4">
                         <!-- EDIT THIS: Add your caption -->
                         <p class="text-center text-gray-700">The beach trip!</p>
@@ -151,10 +153,12 @@
 
                 <!-- Image 2 -->
                 <div id="gallery-item-2" data-song-id="song-2" class="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer fade-on-scroll delay-4">
-                    <!-- 
-                      IMAGE FIX FOR PREVIEW: Replaced "photo2.jpg"
-                    -->
-                    <img src="https://placehold.co/600x400/fecdd3/db2777?text=Your+Photo+2" alt="Gallery image 2" class="w-full h-auto object-cover">
+                    <img 
+                      src="photo2.jpg" 
+                      alt="Gallery image 2" 
+                      class="w-full h-auto object-cover"
+                      onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo2.jpg+not+found'; this.onerror=null;"
+                    >
                     <div class="p-4">
                         <!-- EDIT THIS: Add your caption -->
                         <p class="text-center text-gray-700">That silly face you make.</p>
@@ -163,10 +167,12 @@
 
                 <!-- Image 3 -->
                 <div id="gallery-item-3" data-song-id="song-3" class="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer fade-on-scroll delay-5">
-                    <!-- 
-                      IMAGE FIX FOR PREVIEW: Replaced "photo3.jpg"
-                    -->
-                    <img src="https://placehold.co/600x400/fecdd3/db2777?text=Your+Photo+3" alt="Gallery image 3" class="w-full h-auto object-cover">
+                    <img 
+                      src="photo3.jpg" 
+                      alt="Gallery image 3" 
+                      class="w-full h-auto object-cover"
+                      onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo3.jpg+not+found'; this.onerror=null;"
+                    >
                     <div class="p-4">
                         <!-- EDIT THIS: Add your caption -->
                         <p class="text-center text-gray-700">Best dinner ever.</p>
@@ -175,10 +181,12 @@
                 
                 <!-- Image 4 -->
                 <div id="gallery-item-4" data-song-id="song-4" class="w-full max-w-lg bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer fade-on-scroll delay-6">
-                    <!-- 
-                      IMAGE FIX FOR PREVIEW: Replaced "photo4.jpg"
-                    -->
-                    <img src="https://placehold.co/600x400/fecdd3/db2777?text=Your+Photo+4" alt="Gallery image 4" class="w-full h-auto object-cover">
+                    <img 
+                      src="photo4.jpg" 
+                      alt="Gallery image 4" 
+                      class="w-full h-auto object-cover"
+                      onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo4.jpg+not+found'; this.onerror=null;"
+                    >
                     <div class="p-4">
                         <!-- EDIT THIS: Add your caption -->
                         <p class="text-center text-gray-700">Just us.</p>
