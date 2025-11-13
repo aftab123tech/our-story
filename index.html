@@ -11,14 +11,15 @@
 
     <style>
         /* *** UPDATED BACKGROUND ***
-          This points to your LOCAL 'paper-texture.jpg' file.
+          This now points to your '1_sep_6.jpg' file.
         */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #fcfaf5; /* Fallback color */
-            background-image: url('paper-texture.jpg');
-            background-repeat: repeat;
-            /* The static border is REMOVED from the body */
+            background-image: url('1_sep_6.jpg'); /* YOUR NEW BACKGROUND */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; /* Makes the background stay in place */
             box-sizing: border-box;
             min-height: 100vh;
         }
@@ -62,12 +63,11 @@
             transform: rotate(-20deg);
         }
 
-        /* --- UPDATED: Floral Corner Borders --- */
+        /* --- Floral Corner Borders --- */
         .floral-corner {
             position: fixed;
             width: 120px; 
             height: 120px;
-            /* z-index raised to 100 to ensure it's on top */
             z-index: 100;
             pointer-events: none; 
         }
@@ -80,16 +80,14 @@
         .bottom-left { bottom: 0.5rem; left: 0.5rem; transform: rotate(-90deg); }
         .bottom-right { bottom: 0.5rem; right: 0.5rem; transform: rotate(180deg); }
         
-        /* --- NEW: Page Border Divs --- */
+        /* --- Page Border Divs --- */
         .page-border {
             position: fixed;
             background: #ffffff;
-            /* z-index 40 (so it's "under" the flowers) */
             z-index: 40;
         }
         #top-border {
             top: 0; left: 0; right: 0; height: 8px;
-            /* Added transition for smooth hiding */
             transition: transform 0.3s ease-out;
         }
         #bottom-border { bottom: 0; left: 0; right: 0; height: 8px; }
@@ -106,7 +104,7 @@
 <body class="text-gray-800">
 
     <!-- 
-      *** NEW: PAGE BORDERS ***
+      *** PAGE BORDERS ***
       These divs replace the body border.
     -->
     <div id="top-border" class="page-border"></div>
