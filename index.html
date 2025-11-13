@@ -80,39 +80,15 @@
         .bottom-left { bottom: 0.5rem; left: 0.5rem; transform: rotate(-90deg); }
         .bottom-right { bottom: 0.5rem; right: 0.5rem; transform: rotate(180deg); }
         
-        /* --- Page Border Divs --- */
-        .page-border {
-            position: fixed;
-            background: #ffffff;
-            z-index: 40;
-        }
-        #top-border {
-            top: 0; left: 0; right: 0; height: 8px;
-            transition: transform 0.3s ease-out;
-        }
-        #bottom-border { bottom: 0; left: 0; right: 0; height: 8px; }
-        #left-border { top: 0; bottom: 0; left: 0; width: 8px; }
-        #right-border { top: 0; bottom: 0; right: 0; width: 8px; }
-
-        /* This class is added by JS to hide the top border */
-        .top-border-hidden {
-            transform: translateY(-100%);
-        }
+        /* --- PAGE BORDERS REMOVED --- */
 
     </style>
 </head>
 <body class="text-gray-800">
 
     <!-- 
-      *** PAGE BORDERS ***
-      These divs replace the body border.
+      *** PAGE BORDERS REMOVED ***
     -->
-    <div id="top-border" class="page-border"></div>
-    <div id="bottom-border" class="page-border"></div>
-    <div id="left-border" class="page-border"></div>
-    <div id="right-border" class="page-border"></div>
-    <!-- *** END OF BORDERS *** -->
-
 
     <!-- 
       *** FLORAL CORNERS ***
@@ -165,13 +141,13 @@
     <audio id="song-4" src="song 4.mp3" preload="metadata" loop></audio>
     <!-- END OF AUDIO SECTION -->
 
-    <!-- z-index-10 makes sure content is "above" the white borders but "below" the flowers -->
+    <!-- Content is now z-index 10 -->
     <div class="container mx-auto p-5 max-w-4xl relative z-10">
 
         <!-- Header Section -->
         <header class="text-center my-12 fade-in-load">
             <h1 class="handwritten-title text-pink-600 mb-4">For my minahil</h1>
-            <p class="text-xl text-gray-600">A few of my favorite moments with you.</p>
+            <p class="text-xl text-gray-600">I made this special for you</p>
         </header>
 
         <!-- Main Image Section -->
@@ -188,8 +164,9 @@
                         🎀
                     </div>
                 </div>
+                <!-- *** UPDATED TEXT *** -->
                 <div class="p-6">
-                    <p class="text-center text-lg text-gray-700">"This day was perfect."</p>
+                    <p class="text-center text-lg text-gray-700">MY PASANDIDA AURAT 🫀</p>
                 </div>
             </div>
         </section>
@@ -197,13 +174,14 @@
         <!-- Our Story Section -->
         <section class="mb-16 fade-on-scroll delay-2">
             <h2 class="text-3xl font-bold text-center mb-6 text-gray-800">Our Story</h2>
+            <!-- *** UPDATED TEXT *** -->
             <div class="bg-white rounded-lg shadow-xl p-8">
                 <p class="text-lg leading-relaxed mb-4">
-                    I still remember the day we first met...
+                    I LOVE YOU MINA 💓 MY LOVE YOU DON'T KNOW HOW MUCH I AM IN LOVE .. YOU JUST MADE MY LIFE A LIVING HEAVEN ❤.
                 </p>
                 <p class="text-lg leading-relaxed">
-                    Thank you for every laugh.
-                </p>
+                    I JUST WANNA SAY FROM THIS DAY TILL DEATH I'LL BE ALWAYS WITH YOU . I LOVE YOU MINA MY LOVE 🫀.
+                </D>
             </div>
         </section>
 
@@ -221,8 +199,9 @@
                       class="w-full h-auto object-cover"
                       onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo1.jpg+not+found'; this.onerror=null;"
                     >
+                    <!-- *** UPDATED TEXT *** -->
                     <div class="p-4">
-                        <p class="text-center text-gray-700">The beach trip!</p>
+                        <p class="text-center text-gray-700">I love you 💗</p>
                     </div>
                 </div>
 
@@ -234,8 +213,9 @@
                       class="w-full h-auto object-cover"
                       onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo2.jpg+not+found'; this.onerror=null;"
                     >
+                    <!-- *** UPDATED TEXT *** -->
                     <div class="p-4">
-                        <p class="text-center text-gray-700">That silly face you make.</p>
+                        <p class="text-center text-gray-700">I will never leave you</p>
                     </div>
                 </div>
 
@@ -247,8 +227,9 @@
                       class="w-full h-auto object-cover"
                       onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo3.jpg+not+found'; this.onerror=null;"
                     >
+                    <!-- *** UPDATED TEXT *** -->
                     <div class="p-4">
-                        <p class="text-center text-gray-700">Best dinner ever.</p>
+                        <p class="text-center text-gray-700">You are my world 🌍</p>
                     </div>
                 </div>
                 
@@ -260,8 +241,9 @@
                       class="w-full h-auto object-cover"
                       onerror="this.src='https://placehold.co/600x400/fecdd3/db2777?text=Error:+photo4.jpg+not+found'; this.onerror=null;"
                     >
+                    <!-- *** UPDATED TEXT *** -->
                     <div class="p-4">
-                        <p class="text-center text-gray-700">Just us.</p>
+                        <p class="text-center text-gray-700">🫀🌍🧿</p>
                     </div>
                 </div>
 
@@ -366,18 +348,8 @@
                 playCurrentSong();
             }
 
-            // --- 3. NEW: Hide Top Border on Scroll ---
-            const topBorder = document.getElementById('top-border');
-            if (topBorder) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 20) { // Hides after scrolling 20px
-                        topBorder.classList.add('top-border-hidden');
-                    } else {
-                        topBorder.classList.remove('top-border-hidden');
-                    }
-                });
-            }
-
+            // --- 3. Hide Top Border on Scroll (REMOVED) ---
+           
             // --- 4. Start Everything ---
             for (const songId in songs) {
                 if (songs[songId]) {
